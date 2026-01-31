@@ -80,6 +80,7 @@
       .nav-links {
         display: flex;
         gap: 2rem;
+        margin-left: 55px;
       }
 
       .nav-links a {
