@@ -3,104 +3,330 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-
+    <title>Executive Portfolio | Professional Profile</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <!-- Fonts and Icons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link href="styles/header.css" rel="stylesheet" />
-    <link href="styles/intro.css" rel="stylesheet" />
-    <style>
-      /* add font belongs to Inter */
-      body {
-        font-family: "Inter", sans-serif;
-        padding-top: 70px;
-        padding-left: 80px;
-        padding-right: 80px;
-        height: 3000px;
-      }
-      /* add font belongs to outfit */
-      .logo,
-      h1,
-      h2 {
-        font-family: "Outfit", sans-serif;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      p {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Navbar starts -->
+    <!-- Navigation -->
     <nav class="navbar">
-      <div class="logo">prince_<span>pk</span></div>
-      <div class="menu">
-        <div class="options-1">
-          Home
-          <div class="tooltip">Back to the start</div>
-        </div>
-        <div class="options-2">
-          Experience
-          <div class="tooltip">Work history & roles</div>
-        </div>
-        <div class="options-3">
-          Education
-          <div class="tooltip">Degrees & certificates</div>
-        </div>
-        <div class="options-4">
-          Contact
-          <div class="tooltip">Send a message</div>
+      <div class="container nav-content">
+        <a href="#" class="logo" style="text-transform: none !important"
+          >prince_<span>pk</span></a
+        >
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </nav>
-    <!-- Navbar ends -->
-    <!-- Introduction start here -->
 
-    <section class="intro">
-      <div class="summary">
-        <h1>Turning Complex Ideas into Digital Reality.</h1>
+    <!-- Hero Section -->
+    <header class="container hero" id="home">
+      <div class="hero-text">
+        <h1>Backend Developer & Solutions Engineer</h1>
         <p>
-          I am a Senior Digital Strategist and Developer. I help brands grow by
-          creating high-performance websites and user-centric digital
-          experiences.
+          Zend Certified PHP Developer with 2.8+ years of experience building
+          secure, scalable backend systems using Laravel, Symfony, REST APIs,
+          and cloud technologies.
         </p>
-        <div class="console">
-          <button class="btn-1">Start a Project</button>
-          <button class="btn-2">Email Me</button>
+        <div style="display: flex; gap: 1rem; justify-content: inherit">
+          <a href="#contact" class="btn btn-primary">Start a Project</a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=princeudayagiry2@gmail.com&su=Collaboration%20Request&body=Hi%20Prince,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20a%20potential%20collaboration.%0D%0A%0D%0ARegards,"
+            target="_blank"
+            class="btn btn-soft"
+          >
+            Email Me
+          </a>
         </div>
       </div>
-      <div class="profile-pic">
+      <div class="hero-image">
         <img
-          src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+          src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80"
           alt="Professional Profile"
         />
       </div>
-    </section>
+    </header>
 
-    <div class="status-bar">
-      <div class="cell">
-        <h2>03+</h2>
-        <p>Years Experience</p>
-      </div>
-      <div class="cell">
-        <h2>08+</h2>
-        <p>Projects Handled</p>
-      </div>
-      <div class="cell">
-        <h2>15+</h2>
-        <p>Skills & Tools</p>
-      </div>
-      <div class="cell">
-        <h2>100%</h2>
-        <p>Project Delivery</p>
+    <!-- Stats Bar -->
+    <div class="container">
+      <div class="stats-bar">
+        <div class="stat-item">
+          <h2>03+</h2>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+          <h2>10+</h2>
+          <p>Projects Handled</p>
+        </div>
+        <div class="stat-item">
+          <h2>25+</h2>
+          <p>Skills & Tools</p>
+        </div>
+        <div class="stat-item">
+          <h2>100%</h2>
+          <p>Project Delivery</p>
+        </div>
       </div>
     </div>
 
-    <!-- Introduction ends here -->
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-subtle-sec">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="experience-card">
+          <!-- Company Header -->
+          <div class="exp-header">
+            <div class="company-info">
+              <h3>PITS Solutions</h3>
+              <div class="job-title">Software Engineer</div>
+            </div>
+            <div class="duration">Jul 2022 — May 2025</div>
+          </div>
+
+          <p class="exp-description">
+            Backend developer specializing in enterprise systems, API platforms,
+            legal-tech applications, and secure data architectures, with
+            frontend capabilities for building clean, responsive, user-friendly
+            interfaces.
+          </p>
+
+          <h4 class="projects-label"><span></span>Key Projects Delivered</h4>
+
+          <!-- Unified 4-Project Grid -->
+          <div class="project-grid">
+            <div class="inner-project-card">
+              <h4>Dental Dynamic Staff (DDS)</h4>
+              <p>
+                Enterprise cross-platform staffing system for clinics with job
+                management, contracts, invoicing, and role-based access.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Symfony </span>
+                <span class="tag">MySQL</span>
+                <span class="tag">React </span>
+                <span class="tag">React Native</span>
+                <span class="tag">REST API </span>
+                <span class="tag">AWS S3</span>
+                <span class="tag">Azure Blob</span>
+                <span class="tag">Twilio </span>
+                <span class="tag">OneSignal </span>
+              </div>
+            </div>
+
+            <div class="inner-project-card">
+              <h4>SOMMI (Legal-Tech Platform)</h4>
+              <p>
+                Consent-based legal-tech application enabling secure digital
+                agreements with encrypted contracts and verification.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Laravel </span>
+                <span class="tag">PHP </span>
+                <span class="tag">MySQL </span>
+                <span class="tag">CipherSweet </span>
+                <span class="tag">REST API</span>
+                <span class="tag">Twilio OTP</span>
+                <span class="tag">Queue Workers</span>
+                <span class="tag">Encryption</span>
+              </div>
+            </div>
+
+            <div class="inner-project-card">
+              <h4>Eberhard.ch</h4>
+              <p>
+                Enterprise CMS platform for Swiss construction and recycling
+                company with multi-page content management.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">TYPO3 </span>
+                <span class="tag">Bootstrap </span>
+                <span class="tag">MySQL </span>
+                <span class="tag">HTML </span>
+                <span class="tag">CSS </span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="inner-project-card">
+              <h4>Vindonissa AG Platform</h4>
+              <p>
+                Full-stack CMS solution for construction sector with custom
+                extensions and dynamic content modules.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">TYPO3 </span>
+                <span class="tag">PHP </span>
+                <span class="tag">MySQL </span>
+                <span class="tag">Bootstrap </span>
+                <span class="tag">HTML </span>
+                <span class="tag">CSS </span>
+                <span class="tag">JavaScript </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Education & Certifications</h2>
+
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="edu-info">
+              <h4>B.Tech Mechanical Engineering</h4>
+              <p class="school">KTU University</p>
+              <p class="year">2018–2022</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="edu-info">
+              <h4>Zend Certified PHP Engineer</h4>
+              <p class="school">Zend</p>
+              <p class="year">Certificate No: ZEND033609</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-subtle-sec">
+      <div class="container">
+        <div class="contact-card">
+          <!-- Left Panel -->
+          <div class="contact-left">
+            <h2>Let’s create reliable digital systems.</h2>
+            <p>
+              Specialized in backend development, frontend engineering, API
+              systems, and scalable digital solutions.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p class="label">Email Me</p>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=princeudayagiry2@gmail.com&su=Collaboration%20Request&body=Hi%20Prince,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20a%20potential%20collaboration.%0D%0A%0D%0ARegards,"
+                  target="_blank"
+                  class="value"
+                  >princeudayagiry2@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/prince-pk-a53448171"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/PrincePK07" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Right Panel (Form) -->
+          <iframe name="hidden_iframe" style="display: none"></iframe>
+          <div class="contact-right">
+            <form
+              action="https://docs.google.com/forms/d/e/1FAIpQLSeOZvlmDKp6kqAFKGA7LAkLk5B2bTgXR2eqLXawb9vlC6_N0w/formResponse"
+              method="POST"
+              id="contactForm"
+              target="hidden_iframe"
+            >
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="entry.1518608814" />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="entry.117295048" />
+              </div>
+              <div class="form-group">
+                <label>How can I help?</label>
+                <textarea
+                  rows="4"
+                  placeholder="Tell me about your project..."
+                  name="entry.1213178787"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-hover"
+                style="width: 100%"
+              >
+                Send Message
+              </button>
+            </form>
+            <div
+              id="thank-you"
+              style="display: none; text-align: center; padding: 20px"
+            >
+              <h3>Thank you!</h3>
+              <p>
+                Your message has been sent successfully. I will get back to you
+                soon.
+              </p>
+            </div>
+            <div class="divider">
+              <span>OR</span>
+            </div>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=princeudayagiry2@gmail.com&su=Collaboration%20Request&body=Hi%20Prince,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20a%20potential%20collaboration.%0D%0A%0D%0ARegards,"
+              class="btn btn-outline"
+              style="display: block; text-align: center"
+            >
+              <i class="fa-solid fa-paper-plane" style="margin-right: 8px"></i>
+              Send via Direct Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 YourName. Build with passion for the web.</p>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById("contactForm");
+      const thankYou = document.getElementById("thank-you");
+
+      form.addEventListener("submit", function () {
+        // slight delay to allow Google submission
+        setTimeout(() => {
+          form.style.display = "none";
+          thankYou.style.display = "block";
+        }, 500);
+      });
+    </script>
+    
   </body>
 </html>
